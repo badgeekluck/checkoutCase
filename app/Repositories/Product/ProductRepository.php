@@ -9,7 +9,7 @@ class ProductRepository implements ProductRepositoryInterface
 
     public function all()
     {
-        return Product::all();
+        return Product::withWhereHas('stock', fn($query) => $query->where('quantity', '<', '500'))->get();
     }
 
     public function create(Product $product)
@@ -32,6 +32,6 @@ class ProductRepository implements ProductRepositoryInterface
 
     public function find($id)
     {
-        return Product::findOrFail($id);
+        return Product::withWhereHas('stock', fn($query) => $query->where('id', '=', $id))->get();
     }
 }

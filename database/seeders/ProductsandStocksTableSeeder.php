@@ -14,7 +14,7 @@ class ProductsandStocksTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Stock::factory(100)
+        Stock::factory(25)
             ->create();
     }
 }

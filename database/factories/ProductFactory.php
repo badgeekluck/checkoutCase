@@ -18,7 +18,7 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->firstName,
-            'price' => $this->faker->biasedNumberBetween(0,1000)
+            'price' => $this->faker->numberBetween(1,50)
         ];
     }
 }

@@ -21,6 +21,11 @@ class ProductService implements ProductServiceInterface
 
     public function getProduct(Product $product)
     {
-        return $this->productRepository->find($product);
+        return $this->productRepository->find($product->id);
+    }
+
+    public function getAllProduct()
+    {
+        return $this->productRepository->all();
     }
 }
