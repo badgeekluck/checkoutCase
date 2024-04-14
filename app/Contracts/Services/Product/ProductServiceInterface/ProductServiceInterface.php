@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Contracts\Services\ProductService;
+namespace App\Contracts\Services\Product\ProductServiceInterface;
 
 use App\Models\Product;
 

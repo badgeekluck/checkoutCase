@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('stock_id')->constrained('stocks');
             $table->string('name', 25);
-            $table->float('price');
+            $table->float('price', 1024);
             $table->timestamps();
         });
     }
