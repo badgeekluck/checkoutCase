@@ -26,8 +26,8 @@ class ProductRepository implements ProductRepositoryInterface
 
     public function delete($id)
     {
-        $user = Product::findOrFail($id);
-        $user->delete();
+        $product = Product::findOrFail($id);
+        $product->delete();
     }
 
     public function find($id)
