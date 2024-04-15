@@ -3,6 +3,7 @@
 namespace App\Repositories\Order;
 
 use App\Models\Order;
+use App\Models\Product;
 
 class OrderRepository implements OrderRepositoryInterface
 {
@@ -33,5 +34,10 @@ class OrderRepository implements OrderRepositoryInterface
     public function find($id)
     {
         // TODO: Implement find() method.
+    }
+
+    public function findStockByProductId($productId)
+    {
+        return Order::withWhereHas('products', fn($query) => $query->where('product_id', '=', $productId))->get();
     }
 }

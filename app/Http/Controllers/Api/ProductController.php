@@ -34,13 +34,9 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ProductService $productService, Product $product): JsonResponse
+    public function show(ProductService $productService, Product $product)
     {
-        return response()->json([
-            'status' => true,
-            'message' => 'single product info',
-            'data' => $productService->getProduct($product)
-        ]);
+        return phpinfo();
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Repositories\Stock;
 
 use App\Models\Product;
 use App\Models\Stock;
+use Illuminate\Support\Facades\DB;
 
 class StockRepository implements StockRepositoryInterface
 {
@@ -33,6 +34,16 @@ class StockRepository implements StockRepositoryInterface
 
     public function find($id)
     {
-        return Stock::findOrFail($id);
+        return Stock::where('product_id', $id);
+    }
+
+    public function checkStockByProductId($id)
+    {
+        return Stock::withWhereHas('product', fn($query) => $query->where('id', '=', $id))->get();
+    }
+
+    public function updateStockInfo($orderStoreRequest)
+    {
+        return Stock::where('product_id', $orderStoreRequest->product_id)->decrement('quantity', $orderStoreRequest->quantity);
     }
 }

@@ -22,4 +22,14 @@ class StockService implements StockServiceInterface
     {
         return $this->stockRepository->find($stock);
     }
+
+    public function checkStock($productId)
+    {
+        return $this->stockRepository->checkStockByProductId($productId);
+    }
+
+    public function updateStock($orderStoreRequest)
+    {
+        return $this->stockRepository->updateStockInfo($orderStoreRequest);
+    }
 }

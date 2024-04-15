@@ -14,8 +14,15 @@ class OrderService implements OrderServiceInterface
 
     }
 
-    public function createOrder(Order $order)
+    public function createOrder($orderRequest, $userId, $totalPrice)
     {
+
+        Order::create([
+            'user_id' => $userId,
+            'product_id' => $orderRequest->product_id,
+            'status' => 'PENDING',
+            'total_price' => $totalPrice,
+        ]);
 
     }
 
