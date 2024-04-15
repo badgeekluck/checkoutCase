@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "f8624fb8-0283-4635-af0b-71a723cc3249",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5121341"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjE2ZmMzNDM4YmMxZmE2YzNkNzAwOGRjM2U3NDljZWIwZmY4MjQ3NGRmNjc2Y2ZlMDJkMzhhOGQ2OWJmYzRiNjQ4ZGVlMjIzODI2YTE5ZTEiLCJpYXQiOjE3MTMxMjU2NTcuNjIxNDI3LCJuYmYiOjE3MTMxMjU2NTcuNjIxNDMsImV4cCI6MTc0NDY2MTY1Ny42MTI0MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.Xgl2uHhwD0DOTxWZ0mqYdRm0xSqO5yhT2tsmR4hJXyu2MSUYFcj5J4FP-KuL3VRoNm5VpfPB7MjaqnnFa7Uy9ci7PHDgcYQ8Wfy999lzcP6EeZaBfUfR0ZxqnGZNGCU1hh9sxLCB1sR8w9gh3qBi03J8nL1COQmySA3tZcNKf1oYOwOM_X_NhSCjNPqwV6SCBCYY9OzQrMN5eRLI-_jj9C9SWhaxF7kGJ-JtWt8Ho6eZjt5vgQJtCHTrlFodP6f8jOhJnCGYRu1fBVFVhOflfC2lWm9Xd63E784hECefIUfgtoyp2LFME7evPahrudusxI_u87BoBJLEyjMsG0scD9_tn639LfeSLByb_-t6CIX7peAF59cBgt5DPOrOBDXMicBJ9O4keeoKOuCgCUBCdv2Tgqb3a3w4hVAOEl0wtqVSsMh4dSzhbm8wjqv1O5R-P8ihwD-u6Q1dU6AlO3J_zAn2JUFFBXBRwXpXK0WGbV_6oSbcAsxLeNx_NVVUe-GYbOhKI2GW-Ou6Hg7s4aMb-RfHix40Goj_PNmhcqoO0pyqUUCU2o9xshggqOTx6iSa5cZ5y6ZY60JkY5Uugfuq0aCSvHcUsISp9aQqHwJbm3sUvxq9yHkf3f_M7zygY1xuHUQE5max5P_DO9COsR4gKXAn8u_c0aZIQAbh4JiIPcI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/product/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

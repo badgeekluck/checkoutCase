@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "5ea68a48-0220-4cb3-b60e-3452cd798763",
+		"name": "Order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5121341"
+	},
+	"item": [
+		{
+			"name": "create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDA1MGVkYzQyNTM2NjExMTIzZjRmNzMzMjdmNjI5NTE5YThiOWQ3MDkzMDNhYzY0NzkwNzEzZDBkZjAyNjBiODRhZjZkYTNkMjE5NWY5MzUiLCJpYXQiOjE3MTMxMzcyODAuMzYwMDQ4LCJuYmYiOjE3MTMxMzcyODAuMzYwMDQ5LCJleHAiOjE3NDQ2NzMyODAuMzU0NzgxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.oZ-xlQLLwo9fQ0pTjDJfJ1jkv16YELpVsmY61hHkHO2xSkzYawFwCeyCQxb-O6vBKSY0SsszNAL4H2SrDthQ8k5wbdYwVYfvybIDhRKwCYdFPYM1nmMBNbC1u2KNQKWUxczb4Z4h9nvj1_2ZZ-In_Dl3PaZwyK4iJr92VMetrhFQ05YBIo6XWDeu29EhWVFxhzvjsGi-YTYdkkz-ngBFTwbKtZ3fz59ah7sJGWBvmArME6mOsYfyxJKTgQU3MD76Wl1BYHerZbY1guCLnpmg1YTGM50LpYt-AB5OM-YMKbyiWWHBCA29278OuVZGc9JDt6LjS7qVlw_eGYo_qlD8IdvXXsgageGMpp9eZzGBgXa441maaLSUF4fNjBqdz5CBaX42artsFSPkKE_-AcStxjIS9F54EYI5WM3R8vSud-JYQnbDG0mWK54vNx-t3jztJqTIiw3NcvzVgX_rMplTlhzEkiDXMYGiDdCxqy8UQl6DJNZhlMCI8Sjc3h-RI5jYJyTyh3YpImEsAG_AxfZ2xbMCUI5Kh0SS_tkuE3LFBIUVoUzcmykTvY1uvpe3EudZmXjtNDjtLgaPk3fE2BnirQ8VIwk_KVxJ2HVSCPdhnlJdcH5gbQ0cadnTff9yst6qxM0ExuUvBzA0eW-BXd5VxP6bkWCYsbTkHPaMeFDz0VM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
