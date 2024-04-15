@@ -34,8 +34,8 @@ class SellOrder extends Command
 
         $collection = collect($sellOrders);
 
-        $collection->toArray();
+        $sellOrder = $collection->toArray();
 
-        SellOrderMongoDB::insert($collection->toArray());
+        SellOrderMongoDB::insert($sellOrder);
     }
 }

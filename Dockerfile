@@ -16,6 +16,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     -y mariadb-client
 
+RUN apt-get install -y libcurl4-openssl-dev pkg-config libssl-dev
+
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 

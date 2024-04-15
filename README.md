@@ -1,0 +1,16 @@
+- git clone project
+- docker compose build && docker compose up -d
+- run docker ps command for laravel container id 
+- docker exec -it {laravel container id} bash
+- php artisan composer install
+- php artisan migrate
+- php artisan db:seed
+- php artisan passport:install
+- dont forget to check db params for mongo and mysql
+- used laravel 10, php 8.2, mongodb, mysql
+- on this project we have service layer and repository layer also used
+passport tool for OAuth2.
+- when seeder create product and stock you can try to add order
+- there is two commands for checking order and selling orders.
+- OrderCheck for updating status to 'SUCCESS' for fake sell operation
+- SellOrder for inserting sell orders to MongoDB
